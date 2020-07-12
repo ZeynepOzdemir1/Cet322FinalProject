@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Cet322EticaretUygulaması.Models.CategoryModel>
+
+
+@foreach (var item in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+    </li>
+}
+
